@@ -135,6 +135,8 @@ export default defineNuxtConfig({
     ],
 
     nitro: {
+        preset: 'vercel',
+        inlineDynamicImports: false,
         devProxy: {
             '/aipanme': {
                 target: '',
