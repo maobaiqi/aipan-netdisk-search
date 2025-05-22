@@ -34,7 +34,7 @@ const login = async () => {
         if (!valid) return
 
         loginBtnLoading.value = true
-        const res = await $fetch('/api/user/register', {
+        const res = await $fetch('/api/user/login', {
             method: 'POST',
             body: form
         }).catch(err => {
